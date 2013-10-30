@@ -1,0 +1,17 @@
+.gradle
+.idea
+*.iml
+*.classpath
+*.project
+*.ipr
+*.iws
+*.pyc
+*.html
+*.png
+*.gir
+*.jsp
+*.css
+*.jar
+*.js
+
+.DS_Store
