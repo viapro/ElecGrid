@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/main/webapp/equapment,src/main/webapp/indexTest.jsp,target/mvn-elecgrid/ckfinder/plugins/gallery/colorbox/jquery.min.js,src/main/webapp/ckfinder/plugins/gallery/colorbox/jquery.min.js
+validator.Unchecked=

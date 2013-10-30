@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--持久化对象javabean与数据库表的映射-->
+<hibernate-mapping>
+	<class name="com.viapro.elec.bean.ElecRolePopedom" table="Elec_Role_Popedom">
+		<id name="roleID" type="string">
+			<column name="roleID"></column>
+			<generator class="assigned"></generator>
+		</id>
+		<property name="popedomcode" type="string" column="popedomcode"></property>
+		<property name="remark" type="string" column="remark"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--持久化对象javabean与数据库表的映射-->
+<hibernate-mapping>
+	<class name="com.viapro.elec.bean.ElecApplication" table="Elec_Application">
+		<id name="applicationID" type="long">
+			<column name="applicationID"></column>
+			<generator class="increment"></generator>
+		</id>
+		<property name="applicationTemplateID" type="long" column="applicationTemplateID"></property>
+		<property name="title" type="string" column="title"></property>
+		<property name="path" type="string" column="path"></property>
+		<property name="applicationUserID" type="string" column="applicationUserID"></property>
+		<property name="applicationLogonName" type="string" column="applicationLogonName"></property>
+		<property name="applicationUserName" type="string" column="applicationUserName"></property>
+		<property name="applyTime" type="timestamp" column="applyTime"></property>
+		<property name="status" type="string" column="status"></property>
+	</class>
+</hibernate-mapping>

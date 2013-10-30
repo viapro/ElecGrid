@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--持久化对象javabean与数据库表的映射-->
+<hibernate-mapping>
+	<class name="com.viapro.elec.bean.ElecUser" table="Elec_User">
+		<id name="userID" type="string">
+			<column name="userID"></column>
+			<generator class="uuid"></generator>
+		</id>
+		<property name="jctID" type="string" column="jctID"></property>
+		<property name="userName" type="string" column="userName"></property>
+		<property name="logonName" type="string" column="logonName"></property>
+		<property name="logonPwd" type="string" column="logonPwd"></property>
+		<property name="sexID" type="string" column="sexID"></property>
+		<property name="birthday" type="date" column="birthday"></property>
+		<property name="address" type="string" column="address"></property>
+		<property name="contactTel" type="string" column="contactTel"></property>
+		<property name="email" type="string" column="email"></property>
+		<property name="mobile" type="string" column="mobile"></property>
+		<property name="isDuty" type="string" column="isDuty"></property>
+		<property name="onDutyDate" type="date" column="onDutyDate"></property>
+		<property name="offDutyDate" type="date" column="offDutyDate"></property>
+		<property name="remark" type="string" column="remark"></property>
+	</class>
+</hibernate-mapping>

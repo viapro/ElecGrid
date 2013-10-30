@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.viapro.elec.bean.ElecCommonMsg" table="ELEC_ELECCOMMONMSG">
+        <id name="comID">
+            <generator class="uuid"></generator>
+        </id>
+        <property name="stationRun" type="org.hibernate.type.StringClobType"></property>
+        <property name="devRun" type="org.hibernate.type.StringClobType"></property>
+        <property name="createDate" type="timestamp"></property>
+    </class>
+</hibernate-mapping>

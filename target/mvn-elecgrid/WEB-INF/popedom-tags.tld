@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+  <description><![CDATA["To make it easier to access dynamic data;
+                        the Apache Struts framework includes a library of custom tags.
+                        The tags interact with the framework's validation and internationalization features;
+                        to ensure that input is correct and output is localized.
+                        The Struts Tags can be used with JSP FreeMarker or Velocity."]]></description>
+  <display-name>ElecGrid Tags</display-name>
+  <tlib-version>1.0</tlib-version>
+  <short-name>e</short-name>
+  <uri>/elecgrid-tags</uri>
+  
+  <tag>
+    <description><![CDATA[decide a what to do by name attribute]]></description>
+    <name>popedom</name>
+    <tag-class>com.viapro.elec.util.PopedomTag</tag-class>
+    <body-content>scriptless</body-content>	<!-- 表示标签体内容不接受脚本内容 -->
+    <attribute>
+      <description><![CDATA[Whether the result of this action (probably a view) should be executed/rendered]]></description>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    <dynamic-attributes>false</dynamic-attributes>
+  </tag>
+  
+</taglib>
